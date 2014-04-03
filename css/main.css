@@ -1,0 +1,148 @@
+/*
+ * Base structure
+ */
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+	background-color: #312E2E;
+}
+
+
+/*
+ * Global add-ons
+ */
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    background-color: #312E2E;
+    border-right: 1px solid #eee;
+  }
+	.sidebar a, .sidebar a:hover, .sidebar a:focus {
+    color: #C5C4C4;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -15px; /* 20px padding + 1px border */
+  margin-left: -15px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+	border-bottom: #312E2E solid 1px;
+}
+.nav-sidebar > .active > a {
+  color: #fff;
+  background-color: #585454;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+	color: #fff;
+  background-color: #585454;
+	border-bottom: #000000 solid 1px;
+}
+
+.nav-sidebar ul {
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-bottom: 10px;
+}
+
+.nav-sidebar li.dropdown ul {
+	display: none;
+}
+
+.nav-sidebar ul a {
+	position: relative;
+	display: block;
+	padding-right: 20px;
+	padding-left: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.nav-sidebar ul a:hover, .nav-sidebar ul a:focus  {
+	color: #fff;
+  background-color: #919191;
+}
+
+.a-text {
+	margin-left: 5px;
+}
+
+/*
+ * Main content
+ */
+
+.main-col {
+  background-color: #f1f1f1;
+}
+.main {
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+	.main {
+		min-height: 800px;
+	}
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.bottom-most-footer {
+	font-weight: bold;
+	font-size: 12px;
+	border-top: #000000 solid 1px;
+	padding-top: 10px;
+}
+
+@media (max-width: 767px) {
+	.nav-sidebar > li > a, .nav-sidebar ul a {
+    text-align: center;
+		padding-left: 0px;
+		padding-right: 0px;
+  }
+}
+
+.nav-sidebar > li > a.previous, .nav-sidebar ul a.previous {
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.main .breadcrumb {
+	background-color: #312E2E;
+}
+.main .breadcrumb a {
+	color: #C5C4C4;
+}
+.main .breadcrumb li.active {
+	color: #ffffff;
+}
